@@ -8,11 +8,13 @@ import javax.swing.JOptionPane;
 public class JavaWork {
     public static void main(String[] args) {
         // Задание: Удаление чисел из строки
+        System.out.print("Удаление чисел из строки");
         String firstname;
         firstname = JOptionPane.showInputDialog("Введите строку");
         firstname = firstname.replaceAll("[0-9]","");
         System.out.println(firstname);
-    
+        
+        
         int S, N, Chis_Fib;
         String result;
         result=JOptionPane.showInputDialog("Введите N:");
@@ -40,6 +42,7 @@ public class JavaWork {
         
         
         // Задание: Нахождение НОД и НОК для двух чисел
+        System.out.print("НОД и НОК");
         Scanner in = new Scanner(System.in);
         System.out.print(" Введите два натуральных числа: ");
         long n1 = in.nextLong();
@@ -64,6 +67,7 @@ public class JavaWork {
 
 
         // Задание: Перечсечение отрезков
+        System.out.print("Пересечение отрезков");
         int a,b,c,d,i,j;
 
         String coor1;
@@ -102,13 +106,14 @@ public class JavaWork {
         
         
         // Задание: Проверка слова на полимдромность
+        System.out.println("Полиндром");
         String string;
         string = JOptionPane.showInputDialog("Введите строку");
         
         String stringReverse = "";
-        for (int zakhar = string.length() - 1; zakhar >= 0; --zakhar)
+        for (int z = string.length() - 1; z >= 0; --z)
         {            
-            stringReverse += string.charAt(zakhar); 
+            stringReverse += string.charAt(z); 
         }
   
         if (string.equals(stringReverse)){
